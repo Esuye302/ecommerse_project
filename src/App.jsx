@@ -1,13 +1,17 @@
-import React from "react";
+import { Routes, Route } from "react-router";
 import HomePage from "./pages/HomePage/HomePage";
 import Header from "./components/Header/Header";
+import CheckOutPage from "./pages/CheckOutPage/CheckOutPage";
 const App = () => {
   return (
     <>
       <title>ecommerse_project</title>
 
       <Header />
-      <HomePage />
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="checkout" element={<CheckOutPage />} />
+      </Routes>
     </>
   );
 };
