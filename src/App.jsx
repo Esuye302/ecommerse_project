@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import Header from "./pages/Header/Header";
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <title>ecommerse_project</title>
 
-export default App
+     <Header/>
+    </>
+  );
+};
+
+export default App;
