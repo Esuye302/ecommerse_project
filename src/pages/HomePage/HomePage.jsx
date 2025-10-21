@@ -4,7 +4,7 @@ import "./HomePage.css";
 
 import checkmarkIcon from "../../assets/images/icons/checkmark.png";
 import { Helmet } from "react-helmet-async";
-
+import { formatMoney } from "../../utils/money";
 const HomePage = ({ setCarts }) => {
   const [products, setProducts] = useState([]);
 
@@ -13,7 +13,7 @@ const HomePage = ({ setCarts }) => {
       return setProducts(response.data);
     });
 
-    axios.get("/api/cart-items").then((response) => {
+    axios.get("/api/cart-items?expand=product").then((response) => {
       return setCarts(response.data);
     });
   }, []);
@@ -54,7 +54,7 @@ const HomePage = ({ setCarts }) => {
                 </div>
 
                 <div className="product-price">
-                  ${(product.priceCents / 100).toFixed(2)}
+                  {formatMoney(product.priceCents)}
                 </div>
 
                 <div className="product-quantity-container">
