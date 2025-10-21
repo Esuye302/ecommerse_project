@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import CheckOutPage from "./pages/CheckOutPage/CheckOutPage";
 import OrdersPage from "./pages/OrdersPage/OrdersPage";
 import TrackingPage from "./pages/TrackingPage/TrackingPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="checkout" element={<CheckOutPage />} />
         <Route path="orders" element={<OrdersPage />} />
         <Route path="tracking" element={<TrackingPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   );

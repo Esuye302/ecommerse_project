@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './TrackingPage.css'
+import "./TrackingPage.css";
 import socksImage from "../../assets/images/products/athletic-cotton-socks-6-pairs.jpg";
 import "./TrackingPage.css";
 import Header from "../../components/Header/Header";

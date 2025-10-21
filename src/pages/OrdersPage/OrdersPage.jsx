@@ -1,9 +1,11 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Header from "../../components/Header/Header";
 import { Link } from "react-router-dom";
 import "./OrdersPage.css";
 
 import socksImage from "../../assets/images/products/athletic-cotton-socks-6-pairs.jpg";
+
 import tshirtImage from "../../assets/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg";
 import basketballImage from "../../assets/images/products/intermediate-composite-basketball.jpg";
 import buyAgainIcon from "../../assets/images/icons/buy-again.png";
@@ -11,7 +13,11 @@ import buyAgainIcon from "../../assets/images/icons/buy-again.png";
 const OrdersPage = () => {
   return (
     <>
-    <title>orders page</title>
+      <Helmet>
+        <title>orders page</title>
+        <link rel="icon" type="image/svg+xml" href="/orders-favicon.png" />
+      </Helmet>
+      <link rel="icon" type="image/svg+xml" href="/orders-favicon.png" />
       <Header />
       <div className="orders-page">
         <div className="page-title">Your Orders</div>

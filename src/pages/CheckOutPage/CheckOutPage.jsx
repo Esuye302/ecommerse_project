@@ -8,10 +8,15 @@ import mobileLogo from "../../assets/images/mobile-logo.png";
 import checkoutLockIcon from "../../assets/images/icons/checkout-lock-icon.png";
 import socksImage from "../../assets/images/products/athletic-cotton-socks-6-pairs.jpg";
 import basketballImage from "../../assets/images/products/intermediate-composite-basketball.jpg";
+import { Helmet } from "react-helmet-async";
 
 const CheckOutPage = () => {
   return (
     <>
+    <Helmet>
+            <title>check out</title>
+            <link rel="icon" type="image/svg+xml" href="cart-favicon.png" />
+          </Helmet>
       <div className="checkout-header">
         <div className="header-content">
           <div className="checkout-header-left-section">

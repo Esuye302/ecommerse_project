@@ -1,0 +1,54 @@
+.notfound-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.notfound-content {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.notfound-title {
+  font-size: 100px;
+  color: #ff6b6b;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.notfound-subtitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.notfound-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.notfound-button {
+  display: inline-block;
+  background: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.notfound-button:hover {
+  background: #ff4757;
+  transform: translateY(-2px);
+}
