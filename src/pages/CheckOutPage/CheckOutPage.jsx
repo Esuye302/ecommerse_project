@@ -10,7 +10,7 @@ import socksImage from "../../assets/images/products/athletic-cotton-socks-6-pai
 import basketballImage from "../../assets/images/products/intermediate-composite-basketball.jpg";
 import { Helmet } from "react-helmet-async";
 
-const CheckOutPage = () => {
+const CheckOutPage = ({carts}) => {
   return (
     <>
       <Helmet>
