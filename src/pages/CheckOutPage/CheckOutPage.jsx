@@ -13,10 +13,10 @@ import { Helmet } from "react-helmet-async";
 const CheckOutPage = () => {
   return (
     <>
-    <Helmet>
-            <title>check out</title>
-            <link rel="icon" type="image/svg+xml" href="cart-favicon.png" />
-          </Helmet>
+      <Helmet>
+        <title>check out</title>
+        <link rel="icon" type="image/svg+xml" href="/cart-favicon.png" />
+      </Helmet>
       <div className="checkout-header">
         <div className="header-content">
           <div className="checkout-header-left-section">

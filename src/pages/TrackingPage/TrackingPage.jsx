@@ -4,11 +4,16 @@ import "./TrackingPage.css";
 import socksImage from "../../assets/images/products/athletic-cotton-socks-6-pairs.jpg";
 import "./TrackingPage.css";
 import Header from "../../components/Header/Header";
+import { Helmet } from "react-helmet-async";
 
 const TrackingPage = () => {
   return (
     <>
-      <title>Tracking page</title>
+      <Helmet>
+        <title>Tracking page</title>
+        <link rel="icon" type="image/png" href="/tracking-favicon.png" />
+      </Helmet>
+
       <Header />
       <div className="tracking-page">
         <div className="order-tracking">

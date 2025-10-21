@@ -1,11 +1,7 @@
 import React from "react";
 
-
-
-
 import "./HomePage.css";
 import { products } from "../../../starting-code/data/products";
-
 
 import checkmarkIcon from "../../assets/images/icons/checkmark.png";
 import { Helmet } from "react-helmet-async";
@@ -31,7 +27,10 @@ const HomePage = () => {
                 </div>
 
                 <div className="product-rating-container">
-                  <img className="product-rating-stars" src={product.rating} />
+                  <img
+                    className="product-rating-stars"
+                    src={`../../src/assets/images/ratings/rating-${product.rating.stars*10}.png`}
+                  />
                   <div className="product-rating-count link-primary">
                     {product.rating.count}
                   </div>

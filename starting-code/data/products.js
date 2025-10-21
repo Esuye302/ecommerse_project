@@ -1,7 +1,7 @@
 export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-    image: "../../src/assets/../../src/assets/images/products/athletic-cotton-socks-6-pairs.jpg",
+    image: "../../src/assets/images/products/athletic-cotton-socks-6-pairs.jpg",
     name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
     rating: {
       stars: 4.5,
@@ -12,7 +12,7 @@ export const products = [
   },
   {
     id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
-    image: "../../src/assets/../../src/assets/images/products/intermediate-composite-basketball.jpg",
+    image: "../../src/assets/images/products/intermediate-composite-basketball.jpg",
     name: "Intermediate Size Basketball",
     rating: {
       stars: 4,
@@ -23,7 +23,7 @@ export const products = [
   },
   {
     id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
-    image: "../../src/assets/../../src/assets/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+    image: "../../src/assets/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
     name: "Adults Plain Cotton T-Shirt - 2 Pack",
     rating: {
       stars: 4.5,
@@ -34,7 +34,7 @@ export const products = [
   },
   {
     id: "54e0eccd-8f36-462b-b68a-8182611d9add",
-    image: "../../src/assets/../../src/assets/images/products/2-slot-toaster-white.jpg",
+    image: "../../src/assets/images/products/2-slot-toaster-white.jpg",
     name: "2 Slot Toaster - White",
     rating: {
       stars: 5,
@@ -45,7 +45,7 @@ export const products = [
   },
   {
     id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
-    image: "../../src/assets/../../src/assets/images/products/elegant-white-dinner-plate-set.jpg",
+    image: "../../src/assets/images/products/elegant-white-dinner-plate-set.jpg",
     name: "2 Piece White Dinner Plate Set",
     rating: {
       stars: 4,
@@ -56,7 +56,7 @@ export const products = [
   },
   {
     id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
-    image: "../../src/assets/../../src/assets/images/products/3-piece-cooking-set.jpg",
+    image: "../../src/assets/images/products/3-piece-cooking-set.jpg",
     name: "3 Piece Non-Stick, Black Cooking Pot Set",
     rating: {
       stars: 4.5,
@@ -67,7 +67,7 @@ export const products = [
   },
   {
     id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
-    image: "../../src/assets/../../src/assets/images/products/women-plain-cotton-oversized-sweater-gray.jpg",
+    image: "../../src/assets/images/products/women-plain-cotton-oversized-sweater-gray.jpg",
     name: "Cotton Oversized Sweater - Gray",
     rating: {
       stars: 4.5,
@@ -78,7 +78,7 @@ export const products = [
   },
   {
     id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
-    image: "../../src/assets/../../src/assets/images/products/luxury-towel-set.jpg",
+    image: "../../src/assets/images/products/luxury-towel-set.jpg",
     name: "2 Piece Luxury Towel Set - White",
     rating: {
       stars: 4.5,
@@ -89,7 +89,7 @@ export const products = [
   },
   {
     id: "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
-    image: "../../src/assets/../../src/assets/images/products/facial-tissue-2-ply-8-boxes.jpg",
+    image: "../../src/assets/images/products/facial-tissue-2-ply-8-boxes.jpg",
     name: "Ultra Soft Tissue 2-Ply - 8 Boxes",
     rating: {
       stars: 4,
@@ -100,7 +100,7 @@ export const products = [
   },
   {
     id: "5968897c-4d27-4872-89f6-5bcb052746d7",
-    image: "../../src/assets/../../src/assets/images/products/women-striped-beach-dress.jpg",
+    image: "../../src/assets/images/products/women-striped-beach-dress.jpg",
     name: "Women's Striped Beach Dress",
     rating: {
       stars: 4.5,
