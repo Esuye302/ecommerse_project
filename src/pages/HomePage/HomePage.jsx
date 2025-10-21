@@ -5,28 +5,36 @@ import "./HomePage.css";
 import checkmarkIcon from "../../assets/images/icons/checkmark.png";
 import { Helmet } from "react-helmet-async";
 
-const HomePage = () => {
+const HomePage = ({ setCarts }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/products").then((response) => {
-      console.log(response.data);
+    axios.get("/api/products").then((response) => {
       return setProducts(response.data);
     });
+
+    axios.get("/api/cart-items").then((response) => {
+      return setCarts(response.data);
+    });
   }, []);
+
   return (
     <>
       <Helmet>
         <title>ecommerse_project</title>
         <link rel="icon" type="image/svg+xml" href="/home-favicon.png" />
       </Helmet>
+
       <div className="home-page">
         <div className="products-grid">
           {products.map((product) => {
             return (
               <div key={product.id} className="product-container">
                 <div className="product-image-container">
-                  <img className="product-image" src={`assets/${product.image}`} />
+                  <img
+                    className="product-image"
+                    src={`assets/${product.image}`}
+                  />
                 </div>
 
                 <div className="product-name limit-text-to-2-lines">
