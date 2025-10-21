@@ -1,12 +1,19 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./HomePage.css";
-import { products } from "../../../starting-code/data/products";
 
 import checkmarkIcon from "../../assets/images/icons/checkmark.png";
 import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/api/products").then((response) => {
+      console.log(response.data);
+      return setProducts(response.data);
+    });
+  }, []);
   return (
     <>
       <Helmet>
@@ -19,7 +26,7 @@ const HomePage = () => {
             return (
               <div key={product.id} className="product-container">
                 <div className="product-image-container">
-                  <img className="product-image" src={product.image} />
+                  <img className="product-image" src={`assets/${product.image}`} />
                 </div>
 
                 <div className="product-name limit-text-to-2-lines">
@@ -29,7 +36,9 @@ const HomePage = () => {
                 <div className="product-rating-container">
                   <img
                     className="product-rating-stars"
-                    src={`../../src/assets/images/ratings/rating-${product.rating.stars*10}.png`}
+                    src={`../../src/assets/images/ratings/rating-${
+                      product.rating.stars * 10
+                    }.png`}
                   />
                   <div className="product-rating-count link-primary">
                     {product.rating.count}
