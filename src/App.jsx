@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route index element={<HomePage setCarts={setCarts}/>} />
         <Route path="checkout" element={<CheckOutPage carts={carts}/>} />
-        <Route path="orders" element={<OrdersPage />} />
+        <Route path="orders" element={<OrdersPage carts={carts}/>} />
         <Route path="tracking" element={<TrackingPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
