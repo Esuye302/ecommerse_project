@@ -1,0 +1,20 @@
+.outerWrapper{
+  border: 1px solid blue;
+  width: 220px;
+  height: auto;
+  padding: 10px;
+}
+.wrapper {
+  /* width: 200px;
+  height: 200px;
+  margin: 200px; */
+}
+.wrapper button {
+  width: 80px;
+  margin: 2px;
+}
+.monitor {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+}
